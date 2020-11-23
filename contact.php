@@ -20,7 +20,7 @@
         if ($position_arobase === false)
             echo '<p>Votre email doit comporter un arobase.</p>';
         else {
-            $retour = mail('millotv07@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
+            $retour = mail('millotv07@gmail.com', 'Mail à partir du Porte Folio', $_POST['message'], 'From: ' . $_POST ['email']);
             if($retour)
                 echo '<p>Votre message a été envoyé.</p>';
             else
